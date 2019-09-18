@@ -1,6 +1,9 @@
 # Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export FZF_DEFAULT_COMMAND='fd --type f --color=never'
+export FZF_ALT_C_COMMAND='fd --type d . --color=never'
+
 # autojump with fzf
 j() {
     if [[ "$#" -ne 0 ]]; then
